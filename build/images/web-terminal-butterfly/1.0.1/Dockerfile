@@ -6,4 +6,8 @@ ADD https://raw.githubusercontent.com/acexy/docker-workspaces/main/resource/envi
 RUN python get-pip.py 
 RUN rm -rf get-pip.py
 RUN pip install butterfly
+WORKDIR /usr/src/
+ADD https://raw.githubusercontent.com/acexy/docker-workspaces/main/build/images/web-terminal-butterfly/1.0.1/butter-fly-start.sh web-term.sh
 ENV PORT=15801
+ENTRYPOINT ["/usr/src/web-term.sh"]
+EXPOSE $PORT

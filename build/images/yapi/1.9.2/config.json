@@ -1,0 +1,22 @@
+{
+  "port": "80",
+  "closeRegister": false,
+  "adminAccount": "",
+  "db": {
+    "servername": "",
+    "DATABASE":  "",
+    "port": ,
+    "user": "",
+    "pass": ""
+  },
+  "mail": {
+    "enable": flase,
+    "host": "",
+    "port": ,
+    "from": "",
+    "auth": {
+        "user": "",
+        "pass": ""
+    }
+  }
+}

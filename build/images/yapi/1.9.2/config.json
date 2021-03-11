@@ -10,7 +10,7 @@
     "pass": ""
   },
   "mail": {
-    "enable": flase,
+    "enable": false,
     "host": "",
     "port": ,
     "from": "",

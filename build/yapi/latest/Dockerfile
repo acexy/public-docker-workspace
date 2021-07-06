@@ -1,0 +1,9 @@
+FROM ubuntu
+ENV DEBIAN_FRONTEND=noninteractive
+RUN ["apt-get","update"]
+RUN ["apt-get","install","-y","nodejs","npm","git"]
+RUN ["git","clone","https://github.com/YMFE/yapi.git","src"]
+WORKDIR /src/
+RUN ["npm","install"]
+ENTRYPOINT ["node","/src/server/app.js"]
+EXPOSE 80

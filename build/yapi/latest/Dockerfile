@@ -7,4 +7,4 @@ WORKDIR /src/
 RUN ["npm","install"]
 ENTRYPOINT ["node","/src/server/app.js"]
 RUN ["apt-get","remove","-y","npm"]
-EXPOSE 80
+EXPOSE 8080

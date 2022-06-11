@@ -1,4 +1,4 @@
-# docker-workspaces
+# public-docker-workspace
 
 Docker Platform Environment.
 
